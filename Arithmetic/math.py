@@ -1,19 +1,20 @@
 import math
 
-def multiply(x,y):
-  return x * y
+class Math(object):
+  def multiply(self,x,y):
+    return x * y
 
-def add(x,y):
-  return x + y
+  def add(self,x,y):
+    return x + y
 
-def divide(x,y):
-  return x / y
+  def divide(self,x,y):
+    return x / y
 
-def subtract(x,y):
-  return x - y
+  def subtract(self,x,y):
+    return x - y
 
-def power(x,y):
-  return x ** y
+  def power(self,x,y):
+    return x ** y
 
-def root(x):
-  return math.sqrt(x)
+  def root(x):
+    return math.sqrt(self,x)
