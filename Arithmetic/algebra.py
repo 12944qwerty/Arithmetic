@@ -6,8 +6,3 @@ class Algebra(object):
         first = (-b + math.sqrt(b ** 2 - (4*a*c)))/(2 * a)
         second = (-b - math.sqrt(b ** 2 - (4*a*c)))/(2* a)
         return str(first) + ', ' + str(second)
-
-
-alg = Algebra()
-
-print(alg.zeros(1,0,0))
