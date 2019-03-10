@@ -19,19 +19,13 @@ class Math(object):
         i = 0
         while i < x:
             if i ** y == x:
-                return i
+                return int(i)
                 break
             i += 1
-
-math = Math()
 
 class Algebra(object):
     def zeros(self,a,b,c):
         """Gets the zeros of a quadratic function. Args are A, B, and C in form 'Ax^2 + Bx + C'."""
-        first = (-b + int(math.root(b ** 2 - (4*a*c),2)))/(2 * a)
-        second = (-b - int(math.root(b ** 2 - (4*a*c),2)))/(2* a)
+        first = (-b + math.root(b ** 2 - (4*a*c),2))/(2 * a)
+        second = (-b - math.root(b ** 2 - (4*a*c),2))/(2* a)
         return str(first) + ', ' + str(second)
-
-algebra = Algebra()
-
-print(algebra.zeros(1,1,1))
